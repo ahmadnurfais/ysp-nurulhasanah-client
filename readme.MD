@@ -20,3 +20,12 @@ If in your commit you made a change to the database, please upload that database
 - DB_host: localhost
 - DB_charset: utf8mb4
 - table_prefix: wp_client
+
+**ROOT PATH CONFIGURATION**
+
+The root path configuration in WordPress is really matters. There are two files that contain the root path:
+
+- .htaccess
+- database file (*you can find it in the db folder*)
+
+In these files, the default root path is ***http://localhost/ysp/client***. Please change this to your own root path.
