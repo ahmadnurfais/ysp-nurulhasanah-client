@@ -1,0 +1,294 @@
+/*===========================================================================
+                                Form Css
+===========================================================================*/
+// from body
+body {
+    position: relative;
+label{
+    display: block;
+    width: 100%; 
+    font-weight: 600;
+    color: var(--heading-color-one);
+}
+
+input[type="search"] , input[type="text"] , input[type="email"] , input[type="url"]  , input[type="password"]  , input[type="tel"]  , .wp-block-search__input ,  select , textarea  {
+    background-color: var(--color-white);
+    margin: 5px 0px;
+    border: 1px solid var(--color-set-one-bor-1); 
+    display: block;
+    width: 100%;
+    padding: 0.688rem 1rem;
+    font-size: 1rem; 
+    font-weight: 500;
+    line-height:  normal;
+    height: 60px;
+    font-family: var(--font-family-main);  
+    color: rgba(var(--heading-color-one-rgba) , .5);
+    background-clip: padding-box;
+    appearance: none;
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    &::placeholder{
+        font-weight: 500;
+        font-size: 1rem; 
+        color: rgba(var(--heading-color-one-rgba) , .5);    font-family: var(--font-family-main);  
+    }
+    &:hover{
+        border-color: var(--color-set-one-1);
+    }
+    &:focus{
+        box-shadow: unset;
+    }
+    &:focus-visible {
+        outline: -webkit-focus-ring-color auto 0px;
+    }
+}
+ 
+ 
+textarea  {
+    height: 210px;
+    resize:none;
+} 
+input[type=checkbox], input[type=radio] { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--background-white);
+    border: 2px solid var(--color-set-one-bor-1);
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-size: 18px; 
+    margin: 0 .4em 0 0 !important;
+    min-height: 1em;
+    min-width: 1em;
+    width: 1em; 
+    height: 1em;
+    overflow: hidden;
+    position: static;
+    vertical-align: middle; 
+    display: inline-block!important;
+    padding: 0;
+}
+input[type=checkbox]:before{
+    position: absolute;
+    content: "\e92b";
+    font-family: 'Nioicon';
+    font-size: 12px;
+    width: 16px;
+    text-align: center;
+    height: 16px;
+    color: var(--color-white);
+    line-height: 16px;
+    opacity: 0;
+    top: 5px;
+    left: 1px;
+}
+input[type=checkbox]:checked:before{
+    opacity: 1;
+}
+.select2-container {
+    .select2-selection--multiple{
+        min-height: unset!important;
+        background-color: var(--color-white);
+        border: 1px solid var(--color-set-one-bor-1); 
+        display: block;
+        width: 100%;
+        padding: 1.1rem 1rem 0.688rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: normal;
+        height: 60px;
+        color: var(--heading-color-one);
+        background-clip: padding-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none; 
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        .select2-selection__rendered{
+            padding: 0px!important;
+            margin: 0px!important; 
+            input{
+                padding: 0px!important;
+                margin: 0px!important;
+            }
+            li{
+                padding: 0px!important;
+                margin: 0px 6px 0 0px!important;
+            }
+        }
+        .select2-selection__choice{
+            background: var(--color-set-one-1);
+            color: var(--color-white);
+            font-size: 14px;
+            line-height: normal;
+            padding: 3px 5px 6px   ;
+            border-color: var(--color-set-one-1);
+            .select2-selection__choice__remove{
+                color: var(--color-white);
+                padding: 0;
+                top: -1px;
+                margin: 0px;
+                height: 15px;
+                font-size: 18px;
+                line-height: 18px;
+                margin: auto;
+                border: 0;
+                position: relative;
+            }
+        }
+    }
+}
+
+input[type=checkbox]:after{
+    border: 12px solid var(--color-white)!important;
+    top: 0!important;  
+    content: "";
+}
+input[type=checkbox]:checked{
+    border-color: var(--color-set-one-1);
+    &:after{
+        border: 12px solid var(--color-set-one-1)!important;
+        top: 0!important;
+    }
+}
+/* Style the browse button icon */
+input[type="file"]::-webkit-file-upload-button {
+    background-color: var(--color-set-one-1); /* Replace with your desired background color */
+    color:var(--color-white);
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer; 
+    border-radius: .5rem;
+  }
+  
+select {
+    padding-right:2rem;
+    -webkit-appearance: none;
+    color: var(--heading-color-one);
+    -moz-appearance: none;
+    appearance: none;
+    background: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctitle%3Edown_key%3C/title%3E%3Cpath d='M12.72,15.78a.75.75,0,0,1-.53.22h-.38a.77.77,0,0,1-.53-.22L6.15,10.64a.5.5,0,0,1,0-.71l.71-.71a.49.49,0,0,1,.7,0L12,13.67l4.44-4.45a.5.5,0,0,1,.71,0l.7.71a.5.5,0,0,1,0,.71Z'/%3E%3C/svg%3E") no-repeat right 0.50rem center/18px 20px !important;
+}
+}
+//  end body
+
+.newsteller_simple{
+    position: relative;
+    &.d_in_block{
+        .mc4wp-form-fields{
+            display: flex;
+            gap: 5px;
+            input[type="submit"]{
+                flex: 1; 
+            }
+        }
+    }
+}
+ 
+/* Select2 dropdown border */
+.select2-container .select2-selection--single {
+    border: 1px solid var(--color-set-one-bor-1); /* Replace #f00 with your desired border color */
+    height: 60px!important;
+    font-size: 16px;
+    height: unset;
+    display: flex;
+    align-items: center;
+    padding: 1rem .5rem;
+    color: var(--heading-color-one);
+}
+  .select2.select2-container.select2-container--default{
+    margin: 5px 0px;
+  }
+  /* Select2 dropdown arrow */
+  .select2-container .select2-selection--single .select2-selection__arrow {
+    background-color: unset; /* Replace #f00 with your desired arrow color */
+    position: absolute;
+    top: 1px;
+    right: 8px;
+    width: 20px;
+    bottom: 0;
+    margin: auto;
+    line-height: 15px;
+    height: 15px;   
+    &::before{
+        position: relative;
+        content: unicode('e97f');
+        font-family: 'risehand';
+    }
+    b{
+        display: none;
+    } 
+  }
+  .select2-container--default .select2-search--dropdown .select2-search__field{
+    height: unset;
+  }
+  div.mce-toolbar-grp{
+    background: var(--color-set-one-1)!important;
+    border: unset!important;
+     button{
+
+        color: var(--color-white);
+        border-color: rgba(var(--color-white-rgba) , .5);
+        i{
+            color: var(--color-white)!important;
+        }
+        &:hover{
+            background: var(--color-set-one-4)!important;
+        }
+    }
+  }
+.mce-toolbar .mce-btn button, .qt-dfw{
+    padding: unset!important;
+}
+.mce-toolbar .mce-btn-group .mce-btn:focus, .mce-toolbar .mce-btn-group .mce-btn:hover, .qt-dfw:focus, .qt-dfw:hover{
+    background: unset!important;
+    border: unset!important;
+    box-shadow: unset!important;
+}
+ 
+ 
+ 
+.contact_form_shortcode{
+    br{
+        display: none;
+    }
+}
+.wpcf7-form {
+    br{
+        display: none;
+    }
+    input[type="submit"]{
+        width: 100%!important;
+    }
+} 
+.wpcf7-response-output{
+    position: relative;
+    padding: 10px 20px!important;
+    border: unset!important;
+    border-radius: 0.5rem;
+    background: var(--color-set-one-1);
+    color: var(--color-white);
+    margin: 10px 0px 10px 0px!important;
+   
+}
+.wpcf7-checkbox{
+    display: flex!important;
+    gap: 1rem;
+}
+html body form .wpcf7-checkbox{
+    .wpcf7-list-item{
+        margin: 0px!important;  
+    }
+}
+
+// give-donation-submit
+.give-donation-submit{
+    .form-wrap {
+        span{
+            background: transparent!important;
+            border-color: transparent!important;
+            padding: 0px!important;
+            margin: 0px!important;
+        }
+    }
+}

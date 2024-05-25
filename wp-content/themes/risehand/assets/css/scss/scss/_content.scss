@@ -1,0 +1,87 @@
+// donation_progress
+
+.donation_progress{
+    position: relative; 
+    margin-top: 1.2rem;
+    .perin{
+        position: absolute; 
+        top: -32px;  
+        .percent{ 
+            text-align: right;
+            font-size: 18px;
+            display: block;
+            font-family: var(--font-family-main);
+            font-weight: 700;
+            color: var(--heading-color-one); 
+            &::before{
+                position: absolute;
+                content: "";
+                width: 12px;
+                height: 12px;
+                border-radius: 12px;
+                background: var(--background-white);
+                border: 3px solid var(--color-set-one-1);
+                bottom: -13px;
+                right: -11px;
+                transition: 0.5s ease-in-out;
+                -ms-transition: 0.5s ease-in-out;
+                -moz-transition: 0.5s ease-in-out;
+                -o-transition: 0.5s ease-in-out;
+            }
+        }
+    }
+    .progress{
+        height: 5px;
+        background: var(--color-set-one-bor-1);
+        .progress-bar {
+            background: var(--color-set-one-1);
+        }
+    }
+}
+.progress-greater-than-3 .percent {
+    margin-right: -22px;  
+}
+ 
+
+.goalsdetails{
+    & > div{
+        position: relative; 
+        min-width: 30%;
+        width: 30%;   
+        &::before{
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 90%;
+            background: var(--color-set-one-bor-1);
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }   
+        &:last-child{
+            &::before{
+                display: none;
+            }
+        }
+    }
+    .income_received{
+        min-width: 40%;
+        width: 40%;  
+        padding: 0px 10px;   
+        display: flex;
+        flex-direction: column;
+        .incr{
+            display: inline-flex;
+            flex-direction: column;
+            margin: auto;
+            text-align: center;
+        }
+    }
+    .still_go{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+}
+

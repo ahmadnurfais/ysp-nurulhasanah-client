@@ -1,0 +1,152 @@
+// side menu
+#side_menu_toggle_btn{  
+    position: fixed;
+    top: 166px;
+    right: 0;
+    font-size: 22px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background-color: var(--background-color-extra);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; 
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    border-radius: 10px 0 0 10px;
+    z-index: 999;
+   i{
+       transform: rotate(90deg);
+   }
+   .text_rotate{
+       position: absolute;
+       font-size: 13px;
+       border-radius: 5px;
+       color: #fff;
+       background-color:  var(--background-color-extra);
+       padding: 3px 10px;
+       right: 100%;
+       bottom: 0;
+       min-width: 90px;
+       margin-right: 13px;
+       line-height: 19px;
+       height: 25px;
+       top: 9px;  
+       -webkit-transition: 500ms;
+       transition: 500ms;
+       opacity: 0;
+       visibility: hidden;
+       font-weight: 500; 
+       &:before{
+           position: absolute;
+           right: -17px;
+           top: 0;
+           bottom: 0;
+           margin: auto;
+           content: '';
+           border-left: 10px solid var(--background-color-extra);
+           border-top: 10px solid transparent;
+           border-right: 10px solid transparent;
+           border-bottom: 10px solid transparent;
+           height: 15px;
+       }
+   }
+   &:hover{
+       .text_rotate{
+           opacity: 1;
+           visibility: visible;
+       }
+   }
+}
+.sidemenu_area{
+    position: fixed;
+    top: 0px;
+    right: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 500ms ease;
+    transition: -webkit-transform 500ms ease;
+    transition: transform 500ms ease;
+    transition: transform 500ms ease;
+   border-radius: 10px 0px 0px 10px;
+  
+
+    .side_menu_content{
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        z-index: 99999999999;
+        -webkit-box-shadow: var(--box-shadow-two);
+        box-shadow: var(--box-shadow-two);
+        overflow: auto;
+        padding: 40px 0px 0px;  
+        border: 1px solid var(--color-set-one-bor-1);
+        #side_menu_toggle_btn_close{
+            position: absolute;
+            background: var(--secondary-color-main);
+            font-size: 20px;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            top: 0;
+            right: 0;
+          
+        }
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px #f1f1f1;
+            -moz-box-shadow: inset 0 0 6px #f1f1f1;
+            box-shadow: inset 0 0 6px #f1f1f1;
+            background: #f1f1f1;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: var(--color-set-one-1-three);
+            -webkit-box-shadow: inset 0 0 6px var(--color-set-one-1-three);
+            -moz-box-shadow: inset 0 0 6px var(--color-set-one-1-three);
+            box-shadow: inset 0 0 6px var(--color-set-one-1-three);
+        }
+        &::-webkit-scrollbar-thumb:window-inactive {
+            background: var(--color-set-one-1-three);
+        }
+    }
+    
+}
+
+body{
+    &.side_menu_toggled{
+        .sidemenu_area{
+            -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+            
+        }
+        #side_menu_toggle_btn{
+            opacity: 0;
+            visibility: hidden;
+        }
+        .style-switcher{
+           z-index: 9999;
+        }
+    }
+}

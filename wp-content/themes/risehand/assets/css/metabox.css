@@ -1,0 +1,51 @@
+ .icon-risehand-svg {
+    background-image: url(../images/risehand-fav.png)!important;
+    height: 32px!important;
+    width: 32px!important;  
+    position: relative;
+ }
+  
+
+.redux-banner-inner-container{
+    display: none!important;
+}
+.redux-container .redux-sidebar .redux-group-menu li.hasSubSections.redux-section-hover>a{
+    background-color: #224aca !important;
+}
+.redux-section-field h3 {
+    border: unset!important;
+    line-height: 20px!important;
+    margin: unset!important;
+}
+.redux-section-field {
+    background: #224aca !important;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.risehand_column_half_menu .description-wide{
+    border-bottom: 1px solid rgba(0,0,0,.09);
+    padding: 10px 0px;
+    margin: 0px;
+}
+.risehand_column_half_menu  ul li{
+    display: inline-block;
+    width: 49%;
+}
+.risehand_column_half_menu  .upload-custom-img {
+    background: #224aca !important;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+/*====notice-warning=====*/
+.notice_risehand{
+    background: red;
+    color: #fff;
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px; 
+}
+.notice_risehand   .notice-dismiss:before {
+    color: #fff;
+} 

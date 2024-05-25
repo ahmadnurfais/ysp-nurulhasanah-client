@@ -1,0 +1,62 @@
+/*
+Theme Name: RiseHand
+Theme URI: https://themeforest.net/user/steelthemes/portfolio
+Author: Steelthemes
+Author URI: https://themeforest.net/category/wordpress?term=steelthemes&view=grid#content
+Description: RiseHand is a Charity WordPress Theme.
+Version: 1.1.3
+Tested up to: 8.2
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: risehand
+*/
+ 
+.d_flex , .d-flex , .mc4wp-form-fields{
+	display: -webkit-flex!important; /* Safari */
+	display: -moz-flex!important; /* Firefox */
+	display: -ms-flexbox!important; /* IE 10 */
+	display: -webkit-box!important; /* Older WebKit browsers */
+	display: flex!important; /* Standard syntax */
+}
+ 
+.elementor-section .elementor-container{
+	flex-wrap: wrap;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 0.75em;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+.page-numbers{
+	padding-left: 0px!important;
+}
+.pagination{
+	display: flex;
+}
+.sticky_header_area > p{
+	display: none;
+} 
+
+.position-static {
+    position: static !important;
+}

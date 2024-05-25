@@ -1,0 +1,92 @@
+// footer
+/*------back-to-top------------*/
+
+.prgoress_indicator {
+    position: fixed;
+    right: 50px;
+    bottom: 75px;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50px;
+    box-shadow: inset 0 0 0 2px rgba(var(--color-set-one-3-rgba), 0.09);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    -webkit-transform: translateY(15px) !important;
+    -moz-transform: translateY(15px) !important;
+    -o-transform: translateY(15px) !important;
+    -ms-transform: translateY(15px) !important;
+    transform: translateY(15px) !important;
+    -webkit-transition: all 200ms linear !important;
+    -moz-transition: all 200ms linear !important;
+    -o-transition: all 200ms linear !important;
+    -ms-transition: all 200ms linear !important;
+    transition: all 200ms linear !important;
+    &.active-progress {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateY(0) !important;
+        -moz-transform: translateY(0) !important;
+        -o-transform: translateY(0) !important;
+        -ms-transform: translateY(0) !important;
+        transform: translateY(0) !important;
+      }
+    &::after {
+        position: absolute;
+        content: unicode('e982');
+        font-family: 'risehand';
+        text-align: center;
+        line-height: 46px;
+        font-size: 18px;
+        color: var(--color-set-one-1);
+        left: 0;
+        top: 0;
+        height: 46px;
+        width: 46px;
+        cursor: pointer;
+        display: block;
+        font-weight: 900;
+        z-index: 1;
+        -webkit-transition: all 200ms linear !important;
+        -moz-transition: all 200ms linear !important;
+        -o-transition: all 200ms linear !important;
+        -ms-transition: all 200ms linear !important;
+        transition: all 200ms linear !important;
+      } 
+     
+      &:hover {
+        ::after{
+              color: var(--color-set-one-1);
+        } 
+      }
+      svg path {
+        fill: none;
+      }
+      svg.progress-circle path {
+        stroke: var(--color-set-one-1);
+        stroke-width: 4;
+        box-sizing: border-box;
+        -webkit-transition: all 200ms linear !important;
+        -moz-transition: all 200ms linear !important;
+        -o-transition: all 200ms linear !important;
+        -ms-transition: all 200ms linear !important;
+        transition: all 200ms linear !important;
+      }
+  }
+ 
+.footer{
+    &.footer_default {
+        position: relative;
+        padding: 20px 0px;
+        border-top: 1px solid var(--color-set-one-bor-1);
+    }
+   
+}
+.footer_area{
+    & > p{
+        display: none; 
+    }
+}
