@@ -1,0 +1,38 @@
+.title_all_box{
+    &.style_one{ 
+        position: relative;
+        .before_title{
+            gap: 0.8rem;
+            i , span{
+                font-size: 50px;
+                line-height: normal;
+                color: var(--color-set-one-1);
+            }
+            svg{
+                height: 50px;
+                width: auto;
+                path{
+                    fill: var(--color-set-one-1);
+                }
+            }
+            .font_special{
+                font-size: 26px; 
+                line-height: 36px;
+                color: var(--color-set-one-1);
+            }
+        }
+        &.white_color{
+             .title_no_a_46 , p , .title_no_a_22{
+                color: var(--color-white)
+             }
+        }
+    }
+}
+
+@media(max-width:600px){
+    .title_all_box{ 
+        br{
+            display: none;
+        }
+    }
+}

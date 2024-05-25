@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2022 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="icon-monst-svg" unicode="&#xe803;" d="M5 348l0-498 100 0 100 0 1 320 1 319 132-318 132-319 77 0 77 0 131 320 132 320 2-321 1-321 100 0 100 0 0 498 0 497-114 0-114 0-156-366c-86-202-158-367-159-367-2 0-74 165-159 367l-157 366-114 0-113 0 0-497z" horiz-adv-x="1090" />
+</font>
+</defs>
+</svg>

@@ -1,0 +1,67 @@
+
+.testimonial_box{
+    position: relative;
+    margin-bottom: 30px;
+    &.style_one{
+        padding: 0px;
+        .box_d_flex{
+            gap: 2rem;
+        }
+        .rating{
+            margin: 0 0 1rem;
+            padding: 0;
+            li{
+                list-style: none;
+                span{
+                    font-size: 20px;
+                    color: var(--color-set-one-1);
+                    line-height: normal;
+                    padding-right: 5px;
+                    padding-bottom: 5px;
+                    &:last-child{
+                        padding-right: 0px;
+                    }
+                    &.empty{ 
+                        opacity: .3;
+                    }
+                }
+            } 
+        }
+        .comment{
+            margin-bottom: 1rem;
+        }
+        .authour_details{
+            gap: 1.2rem;
+            .image{
+                min-width: 60px;
+                img{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 60px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+            span{
+                font-weight: 500;
+                font-family: var(--font-family-text);
+                color: var(--color-set-one-1);
+                font-size: 16px;
+            }
+        }
+        .quote_icons{
+            min-width: 70px;
+            i{
+                font-size: 76px;
+                line-height: normal;
+                color: var(--color-set-one-1);
+            }
+        }
+    }
+}
+
+@media(max-width:768px){ 
+    .testimonial_box.style_one .box_d_flex{
+        flex-direction: column!important;
+    }
+}

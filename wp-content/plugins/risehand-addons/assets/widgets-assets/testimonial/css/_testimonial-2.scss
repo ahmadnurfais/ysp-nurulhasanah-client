@@ -1,0 +1,76 @@
+.testimonial_box{
+    position: relative; 
+    padding: 20px 20px;
+    &.style_two{
+        .content_box{
+            position: relative;
+            padding: 30px; 
+            border-radius: 1rem;
+            margin-bottom: 2.5rem;
+            background: var(--background-white);
+            box-shadow: 0px 15px 30px 0px rgba(0,0,0,.07);
+            &::before{
+                position: absolute;
+                content: ''; 
+                border-bottom:16px solid transparent;
+                border-right:12px solid transparent;
+                border-top:16px solid  var(--background-white);
+                border-left:12px solid var(--background-white);
+                bottom: -2rem;
+                left: 3.9rem;
+            }
+        }
+        .quote_icons{
+            min-width: 70px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            i{
+                font-size: 56px;
+                line-height: normal;
+                color: rgba(var(--color-set-one-1-rgba) , .09);
+            }
+        }
+        .rating{
+            margin: 0 0 1rem;
+            padding: 0;
+            li{
+                list-style: none;
+                span{
+                    font-size: 20px;
+                    color: var(--color-set-one-1);
+                    line-height: normal;
+                    padding-right: 5px;
+                    padding-bottom: 5px;
+                    &.empty{
+                        opacity: .3;
+                    }
+                    &:last-child{
+                        padding-right: 0px;
+                    }
+                }
+            } 
+        } 
+        .authour_details{
+            gap: 1.2rem;
+            padding-left: 2rem;
+            .image{
+                min-width: 60px;
+                img{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 60px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+            span{
+                font-weight: 500;
+                font-family: var(--font-family-text);
+                color: var(--color-set-one-1);
+                font-size: 16px;
+            }
+        }
+       
+    }
+}

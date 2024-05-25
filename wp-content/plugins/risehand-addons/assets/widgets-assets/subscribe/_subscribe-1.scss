@@ -1,0 +1,77 @@
+.newsteller{
+    position: relative;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+    background: var(--background-white);
+    border: 1px solid var(--color-set-one-bor-1);
+    &.style_one{
+        .column-1{
+            flex: unset; 
+            min-width: 100%;
+            padding: 20px 30px;
+        }
+        &.light{
+            border: 1px solid rgba(var(--background-white-rgb) , .2);
+            background: transparent;
+            .divider{
+                background: rgba(var(--background-white-rgb) , .2);
+            }
+            .title_no_a_30 , p{
+                color: var(--color-white);
+            }
+        }
+        &.dark{
+            .mc4wp-form-fields input[type=email]{
+                border-color: var(--color-set-one-bor-1);
+            }
+        }
+    }
+    .divider{
+        position: relative;
+        left: 0;
+        right: 0;
+        width: 90%;
+        height: 1px;
+        background: var(--color-set-one-bor-1);
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        pointer-events: none;
+    }
+}
+
+@media(min-width:768px){
+    .newsteller{
+        flex-direction: row;
+        gap: 2rem;
+        &.style_one{
+            .column-1{
+                min-width: unset;
+                flex: 1; 
+                padding: 40px;
+            }
+        }
+        .divider{
+            height: 50%;
+            position: absolute;
+            width: 1px;
+        }
+    }
+}
+@media(max-width:768px){
+    .newsteller{
+        br{
+            display: none;
+        }
+    }
+    .mc4wp-form-fields{
+        flex-direction: column;
+        &::before{
+            top: 20px;
+        }
+        input[type=submit]{
+            width: 100%;
+        }
+    }
+}

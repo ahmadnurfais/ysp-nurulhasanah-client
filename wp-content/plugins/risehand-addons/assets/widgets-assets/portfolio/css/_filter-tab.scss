@@ -1,0 +1,28 @@
+.project_filter{
+    position: relative; 
+    gap: 1rem;
+    margin: 0px 0px 30px;
+    padding: 0px;
+    flex-wrap: wrap;
+    li{ 
+        background: unset;
+        border: 1px solid var(--color-set-one-bor-1);
+        color: var(--heading-color-one);
+        cursor: pointer;
+        margin-bottom: 0px;
+        &:hover , &.current{
+            color: var(--color-white);
+            background: var(--color-set-one-1);
+            border: 1px solid var(--color-set-one-1);
+        }
+    }
+    &.text_center{
+        align-items: center;
+    }
+    &.text_left{
+        align-items: flex-start;
+    }
+    &.text_right{
+        align-items: flex-end;
+    }
+}

@@ -1,0 +1,13 @@
+.icon-risehand-svg:before {  
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: 'R';
+    font-size: 20px;
+    color: #f74f22;
+    font-weight: 700;
+} 

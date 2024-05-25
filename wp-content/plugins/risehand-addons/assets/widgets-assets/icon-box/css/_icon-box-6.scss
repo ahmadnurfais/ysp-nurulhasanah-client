@@ -1,0 +1,60 @@
+.icon_box_all{
+    position: relative;
+    &.style_six{  
+        text-align: center;
+        .icon_box{
+            position: relative;
+            text-align: center;
+            height: 125px;
+            width: 134px;
+            margin: 0 auto -4rem;
+            z-index: 1;
+            .spattern_bg{
+                position: absolute;
+                height: 125px;
+                width: 134px;
+                background: var(--color-set-one-2);
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                z-index: 1;
+            }
+            .icon{
+                align-items: center;
+                justify-content: center;
+                height: 125px;
+                position: relative;
+                z-index: 2;
+                i , span{
+                    color: var(--color-white);
+                    font-size: 60px;
+                    line-height: normal;
+                }
+                img{
+                    width: 60px;
+                    height: auto;
+                }
+            }
+        }
+        .txt_content{
+            padding: 100px 40px 40px;
+            background: rgba(var(--color-set-one-1-rgba) , .1); 
+            border-radius: 20px;
+    
+        }
+        &:hover{
+            .icon_box{
+                .spattern_bg{
+                    background: var(--color-set-one-1);
+                }
+            }
+            .txt_content{
+                background: var(--color-white);
+                box-shadow: var(--box-shadow-three);
+            }
+        }
+    }
+       
+} 

@@ -1,0 +1,65 @@
+.icon_box_all{
+    position: relative;
+    &.style_two{
+        text-align: center;
+     
+        .inner_icon_box{ 
+            &.enable_bgs{
+                background: var(--background-white);
+                border: 1px solid var(--color-set-one-bor-1);
+                padding: 40px;
+                .spattern_bg{
+                    display: none;
+                }
+                &:hover{
+                    box-shadow: var(--box-shadow-three);
+                    border-color: transparent;
+                }
+            }
+            .spattern_bg{
+                position: absolute;
+                height: 280px;
+                width: 255px;
+                background: rgba(var(--color-set-one-1-rgba) , .1);
+                top: 0;
+                left: 0;
+                bottom: 0;
+                margin: auto;
+                z-index: 1;
+            }
+        .icon_box{
+            min-width: 100px;
+            position: relative;
+            text-align: center;
+            margin-bottom: 1.7rem;
+            .icon{
+                position: relative;
+                z-index: 2;
+                i , span{
+                    font-size: 100px;
+                    line-height: normal;
+                    color: var(--color-set-one-1);
+                }
+                img{
+                    height: 140px; 
+                    width: auto;
+                    margin: auto;
+                }
+            }
+        }    
+        .txt_content{
+            position: relative;
+            z-index: 1;
+        }
+        .text_btn {
+            small{
+                text-decoration: underline;
+                text-decoration-color: var(--color-set-one-1);
+                &:before{
+                    display: none;
+                }
+            }
+        }
+    }
+    }
+}

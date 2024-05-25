@@ -1,0 +1,183 @@
+.progress {
+    vertical-align: baseline;
+} 
+  
+  @keyframes progress-bar-stripes {
+      0% {
+        background-position-x: 1rem;
+      }
+  }
+  
+  .progress,
+  .progress-stacked {
+      --bs-progress-height:.5rem;
+      --bs-progress-font-size: 0.75rem;
+      --bs-progress-bg: var(--color-set-one-bor-1);
+      --bs-progress-border-radius: var(--bs-border-radius);
+      --bs-progress-box-shadow: var(--bs-box-shadow-inset);
+      --bs-progress-bar-color: #fff;
+      --bs-progress-bar-bg: var(--color-set-one-1);
+      --bs-progress-bar-transition: width 0.6s ease;
+      display: flex;
+      height: var(--bs-progress-height);
+      overflow: hidden;
+      font-size: var(--bs-progress-font-size);
+      background-color: var(--bs-progress-bg);
+      border-radius: var(--bs-progress-border-radius);
+    }
+    
+    .progress-bar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+      color: var(--bs-progress-bar-color);
+      text-align: center;
+      white-space: nowrap;
+      background-color: var(--bs-progress-bar-bg);
+      transition: var(--bs-progress-bar-transition);
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .progress-bar {
+        transition: none;
+      }
+    }
+    
+    .progress-bar-striped {
+      background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+      background-size: var(--bs-progress-height) var(--bs-progress-height);
+    }
+    
+    .progress-stacked > .progress {
+      overflow: visible;
+    }
+    
+    .progress-stacked > .progress > .progress-bar {
+      width: 100%;
+    }
+    
+    .progress-bar-animated {
+      animation: 1s linear infinite progress-bar-stripes;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .progress-bar-animated {
+        animation: none;
+      }
+    }
+.progress_bar_section{
+    position: relative;
+    margin-top: 2rem;
+    .d_flex{
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: .7rem;  
+    }
+    .progress{
+        small{
+            position: absolute;
+            top: -30px;
+            font-size: 16px;
+            font-weight: 700;
+            margin-left: -2%;
+            color: var(--heading-color-one);
+        }
+    }
+    &.color_one{
+        .d_flex{ 
+            .title_no_a_20.right{
+                color: var(--color-set-one-1);
+            }
+        }
+    }
+    &.color_two{
+        .d_flex{ 
+            .title_no_a_20.right{
+                color: var(--color-set-one-2);
+            }
+        }
+        .progress-bar{
+            background-color: var(--color-set-one-2);
+        }
+    }
+}
+
+
+.progress_boo {
+  width: 150px;
+  height: 150px !important;
+  float: left; 
+  line-height: 150px;
+  background: none;
+  margin: 20px;
+  box-shadow: none;
+  position: relative;
+}
+.progress_boo:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 12px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.progress_boo>span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.progress_boo .progress-left {
+  left: 0;
+}
+.progress_boo .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 12px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+.progress_boo .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+.progress_boo .progress-right {
+  right: 0;
+}
+.progress_boo .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  animation: loading-1 1.8s linear forwards;
+}
+.progress_boo .progress-value {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: #000;
+  font-size: 24px; 
+  color: #fff;
+  line-height: 135px;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.progress_boo.blue .progress-bar {
+  border-color: #049dff;
+}
+.progress_boo.blue .progress-left .progress-bar {
+  animation: loading-2 1.5s linear forwards 1.8s;
+}

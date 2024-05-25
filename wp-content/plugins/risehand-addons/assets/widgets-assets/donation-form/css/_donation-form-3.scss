@@ -1,0 +1,28 @@
+.give_forms_section_three{  
+    position: relative; 
+    background: var(--background-white);
+    box-shadow: var(--box-shadow-three);
+    .description_box{
+        padding: 30px 30px 5px;
+    }
+    &.disable_bwords{
+        br{
+            display: none;
+        }
+    }
+    img{ 
+        width: 100%;
+        height: auto;
+    }
+    .form{
+        position: relative;
+        padding: 30px; 
+        border-top: 1px dashed var(--color-set-one-bor-1);
+        .give-form{
+            margin: 0px; 
+        }
+        .give-btn.give-btn-modal{
+            margin: 0px; 
+        }
+    }
+}

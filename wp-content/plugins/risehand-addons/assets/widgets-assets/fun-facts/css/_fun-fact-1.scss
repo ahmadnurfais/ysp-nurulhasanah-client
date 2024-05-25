@@ -1,0 +1,84 @@
+.facts_style_one{
+    position: relative;
+    text-align: center;
+    border: 1px solid var(--color-set-one-bor-1);
+    .fun_inner{
+        padding: 30px 25px 45px; 
+        &::before , &::after{
+            content:"";
+            width:3px;
+            height:0;
+            position: absolute;
+            transition: all 0.2s linear;
+            background: var(--color-set-one-1);
+        }
+       
+    }
+    .coun_ter{
+        font-size: 65px;
+        line-height: normal;
+        display: block;
+        margin-bottom: .5rem;
+        font-family: var(--font-family-main);
+        color: var(--color-set-one-1);
+        font-weight: 700;
+    }
+    .icon{
+        span , i {
+            font-size: 60px;
+            line-height: normal;
+            display: block;
+            color: var(--color-set-one-1);
+        }
+        img{
+            width: 60px;
+            height: auto;
+            margin: auto;
+        }
+    }
+    &::before , &::after{
+        content:"";
+        width: 0;
+        height: 3px;
+        position: absolute;
+        transition: all 0.2s linear;
+        background: var(--color-set-one-1);
+    }
+     
+    &:hover::before, &:hover::after{
+        width: 100%;
+    }
+    &:hover .fun_inner::before, &:hover .fun_inner::after{
+        height: 100%;
+    }
+
+  &::before{
+    left: 50%;
+    top: 0;
+    transition-duration: 0.4s;
+  }
+  &::after{
+    left: 0;
+    width: 100px;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    transition-duration: 0.4s;
+  }
+    .fun_inner::before{
+    left: 0;
+    top: 50%;
+    transition-duration: 0.4s;
+  }
+   .fun_inner::after{
+    right: 0;
+    top: 50%;
+    transition-duration: 0.4s;
+  }
+  &:hover::before, &:hover::after{
+    left: 0;
+  }
+  &:hover .fun_inner::before, &:hover .fun_inner::after{
+    top: 0;
+  }
+}

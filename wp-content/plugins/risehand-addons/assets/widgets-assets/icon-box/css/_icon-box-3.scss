@@ -1,0 +1,40 @@
+.icon_box_all{
+    position: relative;
+    &.style_three{  
+        padding: 40px;
+        border: 1px solid rgba(var(--color-white-rgb) , .2);
+        .icon_box{ 
+            position: relative; 
+            margin-bottom: 1.7rem;
+            .icon{
+                position: relative;
+                z-index: 2;
+                i , span{
+                    font-size: 60px;
+                    line-height: normal;
+                    color: var(--color-set-one-2);
+                }
+                img{
+                    width: 60px;
+                    height: auto;
+                    margin: auto;
+                }
+            }
+        }    
+        .desc_p , .text_btn small{
+            color: rgba(var(--color-white-rgb) , .7);
+        } 
+        .text_btn {
+            small{
+                text-decoration: underline; 
+                text-decoration-color:rgba(var(--color-white-rgb) , .7);
+                &:before{
+                    display: none;
+                }
+            }
+        }
+        &:hover{
+            border-color: var(--color-set-one-2);
+        }
+    }
+}

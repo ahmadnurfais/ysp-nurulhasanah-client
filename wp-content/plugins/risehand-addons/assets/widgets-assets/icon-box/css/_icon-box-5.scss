@@ -1,0 +1,65 @@
+.icon_box_all{
+    position: relative;
+    &.style_five{  
+        padding: 50px 45px 40px;
+        background: var(--background-white); 
+        border-radius: 10px;
+        box-shadow: var(--box-shadow-three);
+       
+        .icon_box{ 
+            position: relative;  
+            margin-bottom: 2.7rem;
+            .icon{
+                position: relative;
+                z-index: 2;
+                i , span{
+                    font-size: 60px;
+                    line-height: normal;
+                    color: var(--color-set-one-2);
+                }
+                img{
+                    width: 60px;
+                    height: auto; 
+                }
+            }
+            .spattern_bg{
+                position: absolute;
+                height: 116px;
+                width: 96px;
+                background: rgba(var(--color-set-one-1-rgba) , .08);
+                top: 0; 
+                left: -20px; 
+                right: unset; 
+                margin: auto;
+                bottom: 0px; 
+                z-index: 1; 
+            }
+        }    
+        .text_btn {
+            small{
+                text-decoration: underline; 
+                text-decoration-color: var(--color-set-one-1);
+                &:before{
+                    display: none;
+                }
+            }
+        }
+        &:hover{
+            background: var(--color-set-one-1);
+            .icon_box{ 
+                .icon {
+                    i , span{
+                        color: var(--color-white);
+                    } 
+                }
+                .spattern_bg{
+                    background: rgba(var(--color-white-rgb) , .1);
+                }
+            }
+            .title_24 a , .title_no_a_24 , p , .text_btn a , .text_btn small {
+                color: var(--color-white);
+                text-decoration-color: var(--color-white);
+            }
+        }
+    }
+}

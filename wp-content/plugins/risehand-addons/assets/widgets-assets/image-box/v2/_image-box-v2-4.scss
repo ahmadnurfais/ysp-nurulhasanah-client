@@ -1,0 +1,108 @@
+.image_box_v2_four{
+    position: relative; 
+
+    .spattern_bg{
+       display: none;
+    } 
+    .image{ 
+        &.one{
+            margin-bottom: 1rem;
+        }
+        &.one {
+            img{
+                height: 603px;
+       
+                width: 100%; 
+                display: block;
+                position: relative;  
+            }
+        } 
+        &.two{
+            img{ 
+                width: 100%;
+                height: auto; 
+            }
+        }
+        &.three{ 
+            display: none;
+       }
+    }
+   
+    .img_obj_fit_center{ 
+        img{
+            width: 100%;
+        }
+    }
+}
+@media(min-width:1200px){
+    .image_box_v2_four{
+        max-width: 500px;
+        margin: 0 7rem 5rem 0rem;
+        .image_box_v2_four .image.two {
+            position: absolute;
+            right: -7rem;
+            bottom: -5rem;
+            z-index: 2;
+        }
+    }
+}
+@media(max-width:1200px){
+    .image_box_v2_four .image.three{
+        display: none!important;
+    }
+}
+
+@media(min-width:768px){
+    .image_box_v2_four{
+        position: relative;
+        margin: 0 3.5rem 2.5rem 0rem;
+        .spattern_bg{
+            position: absolute;
+            display: block;
+            height: 645px;    
+            width: 731px;
+            margin: auto;
+            left: -7rem;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            -webkit-mask-size: contain;
+            mask-size: contain;
+            background: var(--color-set-one-2);
+        } 
+        .image{
+            z-index: 2;
+            position: relative;
+            &.one {
+                img{
+                    height: 603px;
+                }
+            }
+            &.two{
+                 position: absolute;
+                 right: -2.5rem;  
+                 bottom: -1.5rem;
+                 z-index: 2;
+                img{
+                    height: 235px; 
+                }
+            }
+            &.three{
+                position: absolute;
+                display: block;
+                right: -3.5rem;  
+                bottom: 7rem;
+                z-index: 2;
+           }
+        }
+        
+    }
+}
+
+@media(max-width:1300px){
+    .image_box_v2_four .spattern_bg{
+        height: 345px;    
+        width: 431px;
+        left: 0rem;
+    }
+}

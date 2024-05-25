@@ -1,0 +1,57 @@
+.give_forms_section_two{  
+    position: relative;
+    background: var(--color-set-one-bg-l-1);
+    align-items: stretch; /* Stretch both items to equal height */
+    justify-content: center; /* Center items horizontally */
+    .image{ 
+        min-width: 35%;  
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .form_box{  
+        position: relative;
+        padding: 50px 40px;
+        .give-form{
+            margin: 0px; 
+            .give-donation-amount{
+                .give-currency-symbol{
+                    padding: 0px 30px;
+                    border-top-left-radius: 30px;
+                    border-bottom-left-radius: 30px;
+                    border-color: transparent!important; 
+                }
+                #give-amount-text{
+                    border-color: transparent!important;
+                    border-left: 1px solid var(--color-set-one-bor-1)!important;
+                    border-top-right-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                }
+                #give-amount{
+                    border-top-right-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    border-color: transparent!important;
+                }
+            }
+            .give-donation-levels-wrap button.give-donation-level-btn{
+                border-radius: 30px;
+                border-color: transparent;
+                &.give-btn-level-custom{
+                    background: var(--color-set-one-2);
+                    color: var(--color-white);
+                }
+            }
+            .give-btn.give-btn-modal{
+                border-radius: 30px;
+                margin-top: 1rem; 
+                padding: 15px 30px;
+            }
+        }
+        .give-goal-progress{
+            .give-progress-bar{
+                background: var(--color-set-one-bg-l-2);
+            }
+        }
+    } 
+}

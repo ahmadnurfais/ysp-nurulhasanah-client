@@ -1,0 +1,131 @@
+.give_forms_section.style_one{ 
+    .donation_box_one{
+        position: relative;
+        background: var(--background-white);
+        box-shadow: var(--box-shadow-five);
+        flex-direction: column;
+            .donation_raises{
+                position: relative; 
+                background: var(--background-white);
+                    box-shadow: var(--box-shadow-five);
+                    padding: 1.2rem 1.2rem;  
+                    border-radius: .5rem;
+                .donation_progress{
+                    margin-bottom: 1rem; 
+                }
+                .goals_details{
+                    gap: .3rem;
+                    div{
+                        font-size: 17px;
+                        line-height: 20px;
+                        font-weight: 500;
+                    }
+                    span{ 
+                        color: var(--color-set-one-1);
+                    }
+                }
+            }
+            &.no_images{
+                padding: 1.5rem 0 0 0;
+            }
+            &.has_images{
+                .donation_raises{
+                    margin-top: -3.5rem; 
+                }
+            }
+            .image-box{
+                position: relative;
+                overflow: hidden; 
+                height: 300px;
+                a{
+                    display: block;
+                    img{
+                        height: 300px;
+                        width: 100%;
+                    }
+                }
+                .catdo{
+                    display: none;
+                    a{
+                        position: absolute;
+                        left: 0; 
+                        top: 0;
+                        padding: 0px 15px;
+                        border-bottom-right-radius: 6px; 
+                        background: var(--color-set-one-2);
+                        color: var(--color-white);
+                        font-family: var(--font-family-extra);
+                        font-size: 20px;
+                        font-weight: normal;
+                        line-height: normal; 
+                        display: block; 
+                    }
+                }
+            }
+            .desc_p{
+                display: none;
+            }
+            .content{
+                position: relative;
+                padding:0 25px 20px;
+                .depth_content{
+                    padding: 25px 0 0px 0;
+                    .goalsdetails{
+                        margin-top: 20px;
+                        padding-top: 20px;
+                        border-top: 1px solid var(--color-set-one-bor-1); 
+                        justify-content: space-between; 
+                      
+                        span , small{
+                            display: block;
+                        }
+                        .text , .result{
+                            font-size: 16px;
+                            line-height: normal;
+                            color:var(--heading-color-one);
+                            font-weight: 700;
+                            font-family: var(--font-family-main);
+                            margin-bottom: 8px;
+                        }
+                        .result{
+                            color:var(--color-set-one-1);
+                            font-size: 16px; 
+                            word-break: break-all;  
+                            margin-bottom: 0px;
+                        }
+                        small.result{
+                            color: var(--color-set-one-2);
+                        }
+                    }
+                }
+            
+            } 
+    
+        &:hover{
+            .image-box{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+            .content{
+                .donation_raises{
+                    background: var(--color-set-one-1);
+                    .percent{
+                        color: var(--color-white);
+                    }
+                    .progress .progress-bar{
+                        background: var(--color-set-one-2);
+                    }
+                    .perin .percent::before{
+                        border-color: var(--color-set-one-2);
+                    }
+                    .goals_details{
+                        div , span{
+                            color: var(--color-white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+ 
+/// side panel 
+.side-menu__block {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    height: 100%;
+ 	width: 100%;
+    z-index: 1000; 
+    visibility: hidden;
+    opacity: .7; 
+  
+    .opt_close_btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        border-bottom-left-radius: 10px; 
+        align-items: center;
+        background: var(--color-set-one-1);
+        color: var(--color-white);
+        justify-content: center;
+    } 
+   
+    .side-menu__block-inner{
+        position: relative;
+        overflow-y: scroll;
+        width: 500px; 
+        padding: 55px 40px;
+        z-index: 1000;
+        background: var(--background-white); 
+        height: 100Vh;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%); 
+        .logo {
+            padding: 0px 0px 20px; 
+            display: block; 
+        }
+        .contact_panel{
+            .c_pan{
+                margin: 10px 0;
+                padding: 5px 0;
+                .a_c{
+                    color: var(--heading-color-one);
+                    display: block; 
+                    font-weight: 500;
+                    i{
+                        color: var(--color-set-one-1);
+                        margin-right: 5px;
+                    }
+                }
+                &.mail{
+                    a{
+                        word-break: break-all;
+                    }
+                }
+            }
+        } 
+    } 
+}
+.optactive {
+    .side-menu__block { 
+        visibility: visible;
+        opacity: 1;
+        .side-menu__block-inner{   
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+             visibility: visible;
+             top: 0;
+            opacity: 1;
+        }
+       
+    }
+}  
+.opt_cursor{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+@media(max-width:992px){
+    .side-menu__block      .side-menu__block-inner{   
+        width: 100%;
+    }
+}

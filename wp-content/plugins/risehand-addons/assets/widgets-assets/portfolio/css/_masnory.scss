@@ -1,0 +1,23 @@
+.grid_masnory_box{
+    &.project_container{
+        .row{
+            .project-wrapper{ 
+                &:nth-child(1n+1){
+                    .image-box img{
+                        height: 350px;
+                    }
+                }
+                &:nth-child(2n+1){
+                    .image-box img{
+                        height: 470px;
+                    }
+                }
+                &:nth-child(5n+1){
+                    .image-box img{
+                        height: 550px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.testimonial_box{
+    position: relative;  
+    padding: 20px;
+    &.style_four{
+        padding: 20px 20px 60px;
+        .content_box{
+            padding: 35px 40px;   
+            background: var(--background-white);  
+            box-shadow: 0px 15px 30px 0px rgba(0,0,0,.07);
+        } 
+        .quote_icons{
+            position: absolute;
+            bottom: 20px; 
+            right: 50px;
+            i{
+                border-radius: 130px;
+                background: var(--background-white); 
+                width: 130px;
+                box-shadow: 0px 15px 30px 0px rgba(0,0,0,.07);
+                height: 130px;
+                border-radius: 130px;
+                display: block;
+                font-size: 66px;
+                line-height: 130px;
+                text-align: center; 
+                color: var(--color-set-one-1);
+            }
+        }
+        .comment{
+            margin-bottom: 1.7rem;
+        }
+        .rating{
+            margin: 0 0 1rem;
+            padding: 0;
+            li{
+                list-style: none;
+                span{
+                    font-size: 20px;
+                    color: var(--color-set-one-1);
+                    line-height: normal;
+                    padding-right: 5px;
+                    padding-bottom: 5px;
+                    &:last-child{
+                        padding-right: 0px;
+                    }
+                }
+            } 
+        } 
+        .authour_details{
+            position: relative;
+            gap: 1.2rem; 
+            padding: 0rem 0 0;  
+            .image{
+                min-width: 60px;
+                img{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 60px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+            span{
+                font-weight: 500;
+                font-family: var(--font-family-text);
+                color: var(--color-set-one-1);
+                font-size: 16px;
+            }
+        }
+       
+    }
+}

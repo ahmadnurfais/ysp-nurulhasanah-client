@@ -1,0 +1,151 @@
+.blog-style_7{
+    position: relative;  
+    background: var(--background-white);
+    box-shadow: var(--box-shadow-three);  
+    border-radius: 8px;
+    overflow: hidden;
+    .image-box{
+        position: relative;
+        overflow: hidden; 
+       
+        img{ 
+            width: 100%;
+            height: 278px;
+            display: block;
+        }
+        .cat_gry {   
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 9;
+            padding: 6px 10px; 
+            font-family: var(--font-family-main);
+            font-weight: 700;
+            font-size: 15px;
+            line-height: normal;
+            transition: var(--transition);
+            color: var(--color-white);
+            text-align: center;
+            border: 1px solid var(--color-set-one-2);
+            background: var(--color-set-one-2);
+            justify-content: center;
+            transition: 0.5s ease-in-out;
+            -ms-transition: 0.5s ease-in-out;
+            -moz-transition: 0.5s ease-in-out;
+            -o-transition: 0.5s ease-in-out;
+            border-radius:   0px 0px 0px 0px;  
+            display: inline-block;
+        } 
+        .img_link{ 
+            display: block;
+            &::before{
+                position: absolute;
+                content: '';
+                top: 0;
+                right: 0; 
+                left: 0;
+                bottom: 0;
+                background: rgba(var(--color-set-one-3-rgba) , .6);
+                z-index: 8;
+                opacity: 0;
+                -webkit-transition: 0.5s ease-in-out;
+                transition: 0.5s ease-in-out;
+                -ms-transition: 0.5s ease-in-out;
+                -moz-transition: 0.5s ease-in-out;
+                -o-transition: 0.5s ease-in-out;
+            } 
+        } 
+    }
+     
+    &.no_images{
+        .content_box{ 
+            border-radius: 6px;  
+        }
+    }
+    .content_box{ 
+        position: relative; 
+        padding: 25px 30px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        .d-flex{  
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--color-set-one-bor-1);
+        }
+        .comments{
+            margin-bottom: .7rem;
+            gap: 1rem; 
+            font-family: var(--font-family-extra);
+            font-size: 18px;
+            line-height: 24px; 
+            color: var(--color-set-one-1); 
+            i{
+                margin-right: 6px;
+            }
+            a{
+                font-family: var(--font-family-extra);
+                font-size: 18px;
+                line-height: 24px; 
+                color: var(--color-set-one-1); 
+            }
+        }
+        .date_tm{
+            margin-bottom: .7rem;
+            display: block;
+            time{
+                color: var(--color-set-one-1);
+                text-decoration: unset;          font-size: 18px;
+                i{
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+    .title_22 a{
+        text-decoration: underline;
+        text-decoration-color:transparent;
+        &:hover{ 
+            text-decoration-color:var(--color-set-one-1);
+        }
+    }
+    .text_btn{
+        padding: 8px 0px 0px;
+        color: var(--heading-color-one);
+        small{
+            text-decoration: underline;
+            color: var(--heading-color-one);
+        }
+        &:hover{
+            color: var(--color-set-one-1);
+            small{
+                color: var(--color-set-one-1);
+            }
+        }
+    }
+    
+    &:hover{  
+        box-shadow: var(--box-shadow-three);
+        .content_box {
+            border-color: var(--color-set-one-bor-1);
+           
+        } 
+        .image-box{
+            img{ 
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+            .cat_gry{
+                background: var(--color-set-one-1);
+                color: var(--color-white);
+                border-color: var(--color-set-one-1);
+             }
+            .img_link{
+                &::before{
+                    opacity: 1;
+                }
+            } 
+        }  
+    }
+}

@@ -1,0 +1,143 @@
+.give_forms_section.style_two{ 
+    .donation_box_one{
+        position: relative;
+        align-items: center;
+        background: var(--background-white);  
+        box-shadow: var(--box-shadow-five);
+            &.no_images{
+                flex-direction: column;
+                .content{ 
+                    min-width: 100%;
+                }
+            }
+            .donation_raises{
+                position: relative;  
+                .donation_progress{
+                    margin-bottom: 1rem; 
+                }
+                .goals_details{
+                    gap: .3rem;
+                    div{
+                        font-size: 17px; 
+                        line-height: 20px;
+                        font-weight: 500;
+                    }
+                    span{ 
+                        color: var(--color-set-one-1);
+                    }
+                }
+            }
+            
+            .image-box{
+                position: relative;
+                overflow: hidden; 
+                height: 340px;
+                min-width: 220px;
+                width: 220px;
+               
+                a{
+                    display: block;
+                    img{ 
+                        width: 100%;
+                        height: 340px;
+                    }
+                }
+                .catdo{
+                    display: none;
+                    a{
+                        position: absolute;
+                        left: 0; 
+                        top: 0;
+                        padding: 0px 15px;
+                        border-bottom-right-radius: 6px; 
+                        background: var(--color-set-one-2);
+                        color: var(--color-white);
+                        font-family: var(--font-family-extra);
+                        font-size: 20px;
+                             font-weight: normal;
+                        line-height: normal; 
+                        display: block; 
+                    }
+                }
+            }
+            .desc_p{
+                display: none;
+            }
+            .content{
+                position: relative;
+                padding:25px 25px 20px; 
+                .depth_content{
+                    padding: 25px 0 0px 0;
+                    .goalsdetails{
+                        margin-top: 20px;
+                        padding-top: 20px;
+                        border-top: 1px solid var(--color-set-one-bor-1); 
+                        justify-content: space-evenly;
+                        
+                        span , small{
+                            display: block;
+                        }
+                        .text , .result{
+                            font-size: 16px;
+                            line-height: normal;
+                            color:var(--heading-color-one);
+                            font-weight: 700;
+                            font-family: var(--font-family-main);
+                            margin-bottom: 8px;
+                        }
+                        .result{
+                            color:var(--color-set-one-1);
+                            font-size: 18px;
+                            margin-bottom: 0px;
+                        }
+                        small.result{
+                            color: var(--color-set-one-2);
+                        }
+                    }
+                }
+              
+            } 
+       
+        &:hover{
+            .image-box{
+                
+                img{
+                    transform: scale(1.1); 
+                }
+            } 
+        }
+    }
+    &.excerpt_enable {
+         .donation_box_one .image-box {
+            height: 400px;
+            a img{
+                height: 400px;
+            }
+         }
+	}
+	 
+}
+
+@media(max-width:992px){
+    .give_forms_section.style_two{
+        .donation_box_one{ 
+            display: block!important;
+            .image-box{
+                width: 100%;
+            }
+        }  
+    }
+} 
+@media(max-width:992px){
+    .goals_details{
+        flex-direction: column;
+    }
+     .goals_details > div{
+        min-width: unset!important;
+        width: unset!important;
+        display: flex;
+        padding: 0px!important;
+        gap: .4rem;
+        margin: 0px!important;
+    }
+}

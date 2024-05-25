@@ -1,0 +1,65 @@
+.progress_bar_section_two{
+    align-items: center;
+    gap: 1.5rem; 
+    .progress_new { 
+        max-width: 170px;
+        height: 170px;
+        position: relative; 
+        .progress-value {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0; 
+            width: 100%;
+            height: 100%;
+            line-height: 100%;
+            text-align: center; 
+            align-items: center;
+            justify-content: center; 
+        }
+        .ProgressBar,
+        .ProgressBar-contentCircle{
+            display: table;
+            height: 170px;
+            position: relative;
+            width: 170px;   margin: auto;
+        }
+        .ProgressBar-circle,
+        .ProgressBar-background{
+            //animation: progress 1s;
+            fill: none; // background color
+            stroke: var(--color-set-one-1); // path color
+            stroke-width: 8px; // path size
+            stroke-linecap:round;
+            stroke-dasharray: 0; // circonférence du cercle
+            stroke-dashoffset: 0; // longeur du cercle
+            position: relative;
+            z-index: 10;
+        }
+        .ProgressBar-background{
+            stroke: rgba(0 , 0 , 0 , .07); // path color
+            stroke-width: 5 - 1;
+            z-index: 0;
+        }
+          
+
+    } 
+    &.color_two{
+        .progress_new { 
+            .ProgressBar-circle,
+            .ProgressBar-background{
+                stroke: var(--color-set-one-2); // path color
+            } 
+            .ProgressBar-background{
+                stroke: rgba(0 , 0 , 0 , .07); // path color
+            }
+        } 
+    }
+}
+
+@media(max-width:768px){
+    .progress_bar_section_two{
+        flex-direction: column;
+    }
+}
